@@ -1,0 +1,492 @@
+    /* Paul Irish box-sizing to correct the box model*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.line {
+    border: 0.0625em solid black;
+    /* 1 / 16 */
+    background: #000;
+}
+
+#container,
+ul,
+nav,
+body,
+html {
+    border: none;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.cf {
+    *zoom: 1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+}
+
+#container2 {
+    width: 70%;
+    margin: 0 auto;
+    border: none;
+    padding-bottom: 100px;
+}
+
+
+/* Basic Styles*/
+
+.carousel {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
+    padding: 15px;
+}
+
+.btn-ct {
+    text-align: center;
+}
+
+button.filter.active {
+    background: #57cb57;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.slick-center {
+    transform
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'PT Serif', serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #000;
+}
+
+h1 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.3;
+    margin: 20px 0px 30px 0px;
+    color: #808080;
+    padding-top: 50px;
+}
+
+h2 a {
+    color: #043049;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: ;
+    font-weight: 400;
+    padding-top: 30px;
+    font-size: 18px;
+    color: #808080;
+}
+
+h5 {
+    font-family: 'Source Sans Pro', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+
+/*Navigation*/
+
+nav {
+    width: 80%;
+    float: right;
+}
+
+nav li {
+    width: -8%;
+    font-size: 15px;
+    height: 2.5em;
+    /* 40 / 16 */
+    float: left;
+    margin: 1.625em;
+    / 10 / 16 */
+}
+
+nav li:first-child {
+    /* the hamburger li */
+    display: none;
+}
+
+nav ul {
+    padding-left: 30px;
+    float: right;
+}
+
+#headerWrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.line {
+    height: 0.4375em;
+    /* 7 / 16 */
+    color: #000;
+    width: 60%;
+    margin: 0.3125em auto;
+    /* 5 / 16 */
+    border-radius: 0.3125em;
+    /* 5 / 16 */
+}
+
+
+/*Main content and footer*/
+
+.intro {
+    background: url(../images/slider_3.jpg) rgb(134, 141, 157) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    height: 470px;
+}
+
+.intro p {
+    font-family: 'PT Serif', serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding-top: 160px;
+}
+
+.headerhome {
+    padding-top: 60px;
+    height: 500px;
+}
+
+.content {
+    border: none;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 230px;
+}
+
+.content p {
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.content img {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.homeQuote {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.homeQuote p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 40px;
+}
+
+.homeBlocks {
+    text-align: center;
+    margin-top: 200px;
+    background: #edecec;
+}
+
+.homeBlock {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 230px;
+    margin: 50px;
+}
+
+.homeBlock a:hover {
+    opacity: .5;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    background: #edecec;
+    height: 300px;
+}
+
+footer .text {
+    font-family: 'PT Serif', serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+footer li {
+    display: inline;
+}
+
+footer ul {
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+footer .text {
+    border-bottom: 2px solid;
+    color: #000;
+    text-align: center;
+}
+
+header .logo {
+    float: left;
+    color: #000;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.logoshomewrap {
+    background: transparent;
+    padding: 10px;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bannerBottom {
+    padding: 75px 0px;
+    height: 300px;
+    background: url(../images/blog_image2.jpg) rgb(134, 141, 157) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.bannerBottom p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2em;
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.headerAbout {
+    padding: 40px 20px 20px 20px;
+    height: 500px;
+    background: url(../images/about1.jpg) rgb(134, 141, 157) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.headerYoga {
+    padding: 40px 20px 20px 20px;
+    height: 500px;
+    background: url(../images/slider1.jpg) rgb(134, 141, 157) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.headerEbook {
+    padding: 40px 20px 20px 20px;
+    height: 500px;
+    background: url(../images/subscribe.jpg) rgb(134, 141, 157) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.headerContact {
+    padding: 40px 20px 20px 20px;
+    height: 500px;
+    background: url(../images/slider_2.jpg) rgb(134, 141, 157) top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.ebookform {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+}
+
+#ebookdesc {
+    width: 400px;
+    float: left;
+    margin-right: 50px;
+}
+
+.containerebook {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    /*Navigation*/
+    nav li {
+        display: none;
+        margin: 1.5%;
+    }
+    nav li:first-child {
+        /* the hamburger li */
+        display: block;
+        width: 100px;
+    }
+    .menu-expanded li {
+        display: block;
+        width: 97%;
+        text-align: right;
+        padding-right: 30px;
+        border-bottom: 1px solid;
+        line-height: 7;
+        z-index: 20;
+    }
+    /*Main and footer*/
+    #container>div+div,
+    /* select all divs that have a div immediatley before and is inside the element with the id container */
+    footer>div {
+        width: 97%;
+        /*100%-3% margins*/
+    }
+    #container2 {
+        width: 80%;
+    }
+    .bannerBottom p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.2em;
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .homeBlocks {
+        text-align: center;
+        margin-top: 350px;
+        background: #edecec;
+    }
+    .homeBlock {
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+        width: 331px;
+        margin: 20px;
+    }
+    .content {
+        border: none;
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+        width: 330px;
+    }
+    nav {
+        width: 50%;
+        margin-top: 16px;
+        float: right;
+    }
+    .intro p {
+        font-family: 'PT Serif', serif;
+        font-weight: 200;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        padding-top: 250px;
+    }
+    .intro {
+        background: url(../images/slider_3.jpg) rgb(134, 141, 157) top center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        height: 600px;
+    }
+    .copyright {
+        padding-top: 50px;
+    }
+    .carousel {
+        width: 100%;
+        margin: 0 auto;
+    }
